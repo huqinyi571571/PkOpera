@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document01</title>
+    <style>
+        .box{
+            width: 1300px;
+            height: 650px;
+            background-color: rgb(188, 227, 236);
+        }
+    </style>
+</head>
+<body>
+    <a href="yulunwangye.html">返回</a>
+	<!-- 2.准备具有大小的DOM容器 -->
+    <div class="box"></div>
+
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script>
+        //3.初始化实例对象 echarts.init(dom容器)
+        var myChart = echarts.init(document.querySelector(".box"));
+        //4.指定配置项和数据
+        var option = {
+            color:'#6495ED',
+            title: {
+                text: '抖音平台“京剧演员王梦婷”账号下热度最高视频top20'
+                ,
+                left:'center'
+            },
+            tooltip: {},
+            legend: {
+                data:['点赞数']
+            },
+            xAxis: {
+                data:['脸不是我自己的，随便洗！', '半首《大西厢》云苏调', '扮戏清唱《贵妃醉酒》#国粹', '后面墙别跟着晃悠，谢谢！#旗袍', '祝我生日快乐，今晚9:00直播间见', '排练小记—', '#用戏曲唱响国庆', '我私下也这样可可爱爱，别打我#漫画脸', '我也得学学蹦迪了…嗯！挺违和的！#完颜彩虹兔', '小留香社京剧专场《大劈棺》《鬼神庄》《纺棉花》1月23日', '缅怀恩师黄少华先生。音容犹在，心意相通。', '谁说京剧不抖音', '排练小记—《纺棉花》中反串程派《锁麟囊》#京剧纺棉花', '绿树阴浓夏日长，楼台倒影入池塘。水晶帘动微风起，满架蔷薇一院香。央视戏曲频道宣传片已上线，期待您的关注。', '今晚8:00浙江卫视见～#抖音美好奇妙夜1016', '养了只二哈怎么办#金渐层', '京剧《红娘》中的京白（北京白话），在舞台上经过韵律和节奏处理后更加动听。京白比韵白更通俗易懂、生活化。', '京剧的传承是我毕生的使命', '与@华彩少年-刘丰', '这是谁呀？“叫刘生”吗？@华彩少年-刘丰'],
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: false, //隐藏刻度值
+                },
+                },
+            yAxis: {
+                type:'value'  //数值轴
+                ,
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: true, //隐藏刻度值
+                },
+            },
+            series: [{
+                name: '点赞数/万',
+                type: 'bar',
+                data: [
+                {
+        "value":44.3,
+        "url":"https://www.douyin.com/video/6572526610686151950"
+    },
+    {
+        "value":37.8,
+        "url":"https://www.douyin.com/video/6442881524990741774"
+    },
+    {
+        "value":22.2,
+        "url":"https://www.douyin.com/video/6573591691876371725"
+    },
+    {
+        "value":3.0,
+        "url":"https://www.douyin.com/video/6883385368180247820"
+    },
+    {
+        "value":1.7,
+        "url":"https://www.douyin.com/video/6944240462043696391"
+    },
+    {
+        "value":1.6,
+        "url":"https://www.douyin.com/video/6944631963559021832"
+    },
+    {
+        "value":1.1,
+        "url":"https://www.douyin.com/video/6948709019930348814"
+    },
+    {
+        "value":1.0,
+        "url":"https://www.douyin.com/video/6855232380760886539"
+    },
+        {
+        "value":0.8044,
+        "url":"https://www.douyin.com/video/6913160051859492108"
+    },
+    {
+        "value":0.8044,
+        "url":"https://www.douyin.com/video/6873414150366809351"
+    },
+    {
+        "value":0.7164,
+        "url":"https://www.douyin.com/video/6856707773082635532"
+    },
+    {
+        "value":0.6692,
+        "url":"https://www.douyin.com/video/6908271864292969739"
+    },
+    {
+        "value":0.599,
+        "url":"https://www.douyin.com/video/6844460354399915279"
+    },
+    {
+        "value":0.5728,
+        "url":"https://www.douyin.com/video/6919748508031421700"
+    },
+    {
+        "value":0.5161,
+        "url":"https://www.douyin.com/video/7013610345382038814"
+    },
+    {
+        "value":0.4444,
+        "url":"https://www.douyin.com/video/6843365062015470863"
+    },
+        {
+        "value":0.4246,
+        "url":"https://www.douyin.com/video/6957305372403109134"
+    },
+    {
+        "value":0.4082,
+        "url":"https://www.douyin.com/video/6915384205350391044"
+    },
+    {
+        "value":0.3636,
+        "url":"https://www.douyin.com/video/6989473824551030052"
+    },
+    {
+        "value":0.3494,
+        "url":"https://www.douyin.com/video/6919410708845301003"
+    }
+                ]
+            }]
+        };
+        //5.将配置项设置给echarts实例对象，使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        myChart.on("click", function(params) {
+        console.log(params);
+          window.location.href = params.data.url;
+      });
+    </script>
+</body>
+</html>

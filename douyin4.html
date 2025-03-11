@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document01</title>
+    <style>
+        .box{
+            width: 1300px;
+            height: 650px;
+            background-color: rgb(188, 227, 236);
+        }
+    </style>
+</head>
+<body>
+    <a href="yulunwangye.html">返回</a>
+	<!-- 2.准备具有大小的DOM容器 -->
+    <div class="box"></div>
+
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script>
+        //3.初始化实例对象 echarts.init(dom容器)
+        var myChart = echarts.init(document.querySelector(".box"));
+        //4.指定配置项和数据
+        var option = {
+            color:'#6495ED',
+            title: {
+                text: '抖音平台“京剧·吴昊”账号下热度最高视频top20'
+                ,
+                left:'center'
+            },
+            tooltip: {},
+            legend: {
+                data:['点赞数']
+            },
+            xAxis: {
+                data:['曲终人散，终是大梦一场~#戏腔', '此情无计可消除，才下眉头，却上心头~#戏腔', '燃尽此身共你醉一场…', '这首歌有没有勾起你们的回忆？#中华民谣', '我是你不值你提的可有可无…#觉悟', '花旦版《三拜红尘凉》来啦～#三拜红尘凉', '我心匪石不可转，我心匪席不可卷……', '青春就像握不住的沙，最终都是要慢慢消逝的。', '短暂的陪伴是奖励还是惩罚？#惩罚与奖励', '你们的身边有没有这样的大爷呢……', '红颜多惹祸，相思多折磨～#醉饮情浓', '戏腔版来啦～#画离弦', '我自关山点酒', '你们要的“老实人”来啦～#戏腔', '风月无边相思寄京华～', '夜半惊觉人静谧，', '世间唯有情字绕人愁～#西厢寻他', '原来我就是那戏中所唱之人～#戏腔', '这人间七唱，你听到了第几唱？#戏腔', '走卒戏腔版，终于来啦，有没有余音绕梁，不绝于耳～#弘扬戏曲文化', '青衣戏腔，完整版·声声慢她来啦，当京剧老师遇见古风歌曲声声慢，青砖伴瓦漆，白马踏新泥～#戏腔', '别找了，原声是我~全网都在要的《此去半生》来啦，完整版已上线。#戏腔', '几度春风里，看花谢花开…#戏腔'],
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: false, //隐藏刻度值
+                },
+                },
+            yAxis: {
+                type:'value'  //数值轴
+                ,
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: true, //隐藏刻度值
+                },
+            },
+            series: [{
+                name: '点赞数/万',
+                type: 'bar',
+                data: [
+                {
+        "value":3700.0,
+        "url":"https://www.douyin.com/video/7203982115065711931"
+    },
+    {
+        "value":3689,
+        "url":"https://www.douyin.com/video/7221077210352979237"
+    },
+    {
+        "value":4752,
+        "url":"https://www.douyin.com/video/7220343469317836043"
+    },
+    {
+        "value":8470,
+        "url":"https://www.douyin.com/video/7218132410280594692"
+    },
+    {
+        "value":2700.0,
+        "url":"https://www.douyin.com/video/7217019643175718182"
+    },
+    {
+        "value":9479,
+        "url":"https://www.douyin.com/video/7215911392686263591"
+    },
+    {
+        "value":8755,
+        "url":"https://www.douyin.com/video/7215167483811040515"
+    },
+    {
+        "value":8752,
+        "url":"https://www.douyin.com/video/7214054687413128486"
+    },
+    {
+        "value":4315,
+        "url":"https://www.douyin.com/video/7213671926638644513"
+    },
+    {
+        "value":1000.0,
+        "url":"https://www.douyin.com/video/7213300540271332619"
+    },
+    {
+        "value":1000.0,
+        "url":"https://www.douyin.com/video/7212566466455997699"
+    },
+    {
+        "value":1300.0,
+        "url":"https://www.douyin.com/video/7207735209213578496"
+    },
+    {
+        "value":2300.0,
+        "url":"https://www.douyin.com/video/7211812395864411424"
+    },
+    {
+        "value":2700.0,
+        "url":"https://www.douyin.com/video/7211074836284656929"
+    },
+    {
+        "value":7921,
+        "url":"https://www.douyin.com/video/7210330646525381922"
+    },
+    {
+        "value":2200.0,
+        "url":"https://www.douyin.com/video/7208848350056156416"
+    },
+    {
+        "value":1200.0,
+        "url":"https://www.douyin.com/video/7205509863345032448"
+    },
+    {
+        "value":1100.0,
+        "url":"https://www.douyin.com/video/7206249617074277672"
+    },
+    {
+        "value":1100.0,
+        "url":"https://www.douyin.com/video/7204757692018134307"
+    },
+    {
+        "value":27400.0,
+        "url":"https://www.douyin.com/video/7106807890945608995"
+    },
+    {
+        "value":34700.0,
+        "url":"https://www.douyin.com/video/7101614625988414754"
+    },
+    {
+        "value":46500.0,
+        "url":"https://www.douyin.com/video/7129427453440773412"
+    },
+    {
+        "value":1300.0,
+        "url":"https://www.douyin.com/video/7222214354848992551"
+    }
+                ]
+            }]
+        };
+        //5.将配置项设置给echarts实例对象，使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        myChart.on("click", function(params) {
+        console.log(params);
+          window.location.href = params.data.url;
+      });
+    </script>
+</body>
+</html>

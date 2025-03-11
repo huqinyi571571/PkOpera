@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document01</title>
+    <style>
+        .box{
+            width: 1300px;
+            height: 650px;
+            background-color: rgb(188, 227, 236);
+        }
+    </style>
+</head>
+<body>
+    <a href="yulunwangye.html">返回</a>
+	<!-- 2.准备具有大小的DOM容器 -->
+    <div class="box"></div>
+
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script>
+        //3.初始化实例对象 echarts.init(dom容器)
+        var myChart = echarts.init(document.querySelector(".box"));
+        //4.指定配置项和数据
+        var option = {
+            color:'#6495ED',
+            title: {
+                text: '抖音平台“果小菁”账号热度最高视频top20'
+                ,
+                left:'center'
+            },
+            tooltip: {},
+            legend: {
+                data:['点赞数']
+            },
+            xAxis: {
+                data:['自己好好反思。为什么会刷到我#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '今天用才艺可以在海底捞换吃的！#海底捞是懂生日的', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '下次有事打电话！#oppofindx6', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说', '#果子戏说'],
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: false, //隐藏刻度值
+                },
+                },
+            yAxis: {
+                type:'value'  //数值轴
+                ,
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: true, //隐藏刻度值
+                },
+            },
+            series: [{
+                name: '点赞数/万',
+                type: 'bar',
+                data: [
+                {
+        "value":161.0,
+        "url":"https://www.douyin.com/video/6997340053538082061"
+    },
+    {
+        "value":19.2,
+        "url":"https://www.douyin.com/video/7221123539317820728"
+    },
+    {
+        "value":17.7,
+        "url":"https://www.douyin.com/video/7209267843156741436"
+    },
+    {
+        "value":16.4,
+        "url":"https://www.douyin.com/video/7214096385996508475"
+    },
+    {
+        "value":13.9,
+        "url":"https://www.douyin.com/video/7212462330326617403"
+    },
+    {
+        "value":12.8,
+        "url":"https://www.douyin.com/video/7207750373963042108"
+    },
+    {
+        "value":9.7,
+        "url":"https://www.douyin.com/video/7209618519321775397"
+    },
+    {
+        "value":8.6,
+        "url":"https://www.douyin.com/video/7210707526751440188"
+    },
+    {
+        "value":7.2,
+        "url":"https://www.douyin.com/video/7220710521639636261"
+    },
+    {
+        "value":6.6,
+        "url":"https://www.douyin.com/video/7220003677338144038"
+    },
+    {
+        "value":5.9,
+        "url":"https://www.douyin.com/video/7215148360683113732"
+    },
+    {
+        "value":150.8,
+        "url":"https://www.douyin.com/video/7208891161686068536"
+    },
+    {
+        "value":5.6,
+        "url":"https://www.douyin.com/video/7221396446916988219"
+    },
+    {
+        "value":4.6,
+        "url":"https://www.douyin.com/video/7222192137285225785"
+    },
+    {
+        "value":2.2,
+        "url":"https://www.douyin.com/video/7208120467897535800"
+    },
+    {
+        "value":2.1,
+        "url":"https://www.douyin.com/video/7221867274326560061"
+    },
+    {
+        "value":126.0,
+        "url":"https://www.douyin.com/video/7032241744934685966"
+    },
+    {
+        "value":42.7,
+        "url":"https://www.douyin.com/video/7211845834592374071"
+    },
+    {
+        "value":39.9,
+        "url":"https://www.douyin.com/video/7218044972291870007"
+    },
+    {
+        "value":34.8,
+        "url":"https://www.douyin.com/video/7155037787178159363"
+    },
+    {
+        "value":33.9,
+        "url":"https://www.douyin.com/video/7218874104399629625"
+    },
+    {
+        "value":28.2,
+        "url":"https://www.douyin.com/video/7216669675181133111"
+    },
+    {
+        "value":26.9,
+        "url":"https://www.douyin.com/video/7215932482292682036"
+    }
+                ]
+            }]
+        };
+        //5.将配置项设置给echarts实例对象，使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        myChart.on("click", function(params) {
+        console.log(params);
+          window.location.href = params.data.url;
+      });
+    </script>
+</body>
+</html>

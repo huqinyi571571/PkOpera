@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document01</title>
+    <style>
+        .box{
+            width: 1300px;
+            height: 650px;
+            background-color: rgb(188, 227, 236);
+        }
+    </style>
+</head>
+<body>
+    <a href="yulunwangye.html">返回</a>
+	<!-- 2.准备具有大小的DOM容器 -->
+    <div class="box"></div>
+
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script>
+        //3.初始化实例对象 echarts.init(dom容器)
+        var myChart = echarts.init(document.querySelector(".box"));
+        //4.指定配置项和数据
+        var option = {
+            color:'#6495ED',
+            title: {
+                text: '抖音平台“凌珂”账号下热度最高视频top20'
+                ,
+                left:'center'
+            },
+            tooltip: {},
+            legend: {
+                data:['点赞数']
+            },
+            xAxis: {
+                data:['今日演出《定军山》，感谢所有到场的观众。#京剧', '陈世美自首记画个眼线把脑子画没了#京剧', '明天见#京剧', '走一波儿照片吧！这戏就算过去了，等着四月十八号长安的《四郎探母》吧#京剧', '老师在，我们就还能当孩子。愿老师们都健康长寿，硬硬朗朗的#京剧', '今天说排，明天说唱，大后天响排！进京赴科场的一般', '音贯顶，靠手领，位置高，用手招#京剧', '练功打卡', '吼一句“头带着”神清气爽，耍十遍下场花血脉舒张！上午练刀，下午习唱，京剧演员应有的日常生活状态#京剧', '日常造魔。希望不影响您的正常背诵#京剧', '3月29日我和奚中路老师在长安大戏院演出《伐东吴', '昨日锦州大剧院演出《大探二》，谢谢所有到场的朋友#京剧', '上阵拍马把刀抡，卸甲捻线来穿针#京剧', '十遍下场式儿，十遍刀下场，胳膊已经提不动刀。老黄忠练功忘记拿胡子，少年黄汉升', '回乡美食探亲排戏演出练兵会友休闲治病收获过瘾奉献不枉此行#谁能拒绝京剧的魅力', '3月4日长沙演出《杨家将》#京剧', '昨日锦州演出返场，为大家带来《战太平》#京剧', '今天演出前的准备，在台下的举个手#名角dou来了', '3月3日、3月4日京剧《珠帘寨》、《杨家将》长沙见！#名角dou来了', '这曲儿有毒，根本停不下来#谁说京剧不抖音', '看到最后一秒回来告诉我你怕不怕#京剧', '别憋气', '四月一号感冒嗓子哑了，九号刚刚恢复一点，唱陈世美刚够，错误估计了负重力，唱了个没必要的叫小番十八号欢迎大家发挥一下传统京剧观众的吃瓜精神，来长安看看，这孙子这回能不能上去'],
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: false, //隐藏刻度值
+                },
+                },
+            yAxis: {
+                type:'value'  //数值轴
+                ,
+                axisLine: {
+                show: true, //隐藏y轴
+                },
+                axisTick: {
+                show: true,  //刻度线
+                },
+                axisLabel: {
+                show: true, //隐藏刻度值
+                },
+            },
+            series: [{
+                name: '点赞数/万',
+                type: 'bar',
+                data: [
+                {
+        "value":4034,
+        "url":"https://www.douyin.com/video/7204060601646091553"
+    },
+    {
+        "value":1511,
+        "url":"https://www.douyin.com/video/7220383143528762659"
+    },
+    {
+        "value":3048,
+        "url":"https://www.douyin.com/video/7219670353654648098"
+    },
+    {
+        "value":880,
+        "url":"https://www.douyin.com/video/7218848525960940834"
+    },
+    {
+        "value":4452,
+        "url":"https://www.douyin.com/video/7216703490058390818"
+    },
+    {
+        "value":784,
+        "url":"https://www.douyin.com/video/7214099760666627363"
+    },
+    {
+        "value":992,
+        "url":"https://www.douyin.com/video/7211521231458241807"
+    },
+    {
+        "value":593,
+        "url":"https://www.douyin.com/video/7210724602106973475"
+    },
+    {
+        "value":809,
+        "url":"https://www.douyin.com/video/7210416783608614184"
+    },
+    {
+        "value":1037,
+        "url":"https://www.douyin.com/video/7210002399568612648"
+    },
+    {
+        "value":504,
+        "url":"https://www.douyin.com/video/7209234950892047649"
+    },
+    {
+        "value":1476,
+        "url":"https://www.douyin.com/video/7201324898856209719"
+    },
+    {
+        "value":700,
+        "url":"https://www.douyin.com/video/7208882460090780940"
+    },
+    {
+        "value":1599,
+        "url":"https://www.douyin.com/video/7208438392026074402"
+    },
+    {
+        "value":916,
+        "url":"https://www.douyin.com/video/7207779961632034083"
+    },
+    {
+        "value":1098,
+        "url":"https://www.douyin.com/video/7207004064880626948"
+    },
+    {
+        "value":1280,
+        "url":"https://www.douyin.com/video/7201699349913488696"
+    },
+    {
+        "value":969,
+        "url":"https://www.douyin.com/video/7206316690966088964"
+    },
+    {
+        "value":694,
+        "url":"https://www.douyin.com/video/7205531232493440268"
+    },
+    {
+        "value":54500.0,
+        "url":"https://www.douyin.com/video/6930911724069588239"
+    },
+    {
+        "value":49900.0,
+        "url":"https://www.douyin.com/video/6937220888093822243"
+    },
+    {
+        "value":32000.0,
+        "url":"https://www.douyin.com/video/6938334467580841256"
+    },
+    {
+        "value":1488,
+        "url":"https://www.douyin.com/video/7221126583262645544"
+    }
+                ]
+            }]
+        };
+        //5.将配置项设置给echarts实例对象，使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        myChart.on("click", function(params) {
+        console.log(params);
+          window.location.href = params.data.url;
+      });
+    </script>
+</body>
+</html>
